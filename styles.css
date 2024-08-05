@@ -5,6 +5,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	background-color: #f0f4ff;
+	scroll-beavior: smooth;
 }
 
 /* Header styles */
@@ -12,6 +13,10 @@ header {
 	background-color: #fff;
 	padding: 20px 0;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
 }
 
 nav {
@@ -57,6 +62,7 @@ nav {
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
+	padding-top: 100px;
 }
 
 .hero {
@@ -105,4 +111,109 @@ nav {
 	width: 150px;
 	height: 150px;
 	object-fit: cover;
+}
+
+.social-links {
+	margin-top: 20px;
+}
+
+.social-links a {
+	margin: 0 10px;
+	font-size: 1.5em;
+	color: #000000;
+	transition: color 0.3s;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+	color: #007bff;
+}
+
+/* About section styles */
+#about {
+	background-color: #fff;
+}
+
+#about h2 {
+	font-size: 2em;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+#about p {
+	font-size: 1em;
+	color: #666;
+	line-height: 1.6;
+}
+
+/* Skills section styles */
+#Skills {
+	background-color: #f9f9f9;
+}
+
+#Skills h2 {
+	font-size: 2em;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+#Skills ul {
+	list-style: none;
+	padding: 0;
+}
+
+#Skills li {
+	font-size: 1em;
+	color: #666;
+	margin: 10px 0;
+}
+
+/* Contact section styles */
+#Contact {
+	background-color: #f9f9f9;
+}
+
+#Contact h2 {
+	font-size: 2em;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+#Contact p {
+	font-size: 1em;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	text-align: left;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.contact-info li {
+	margin-bottom: 10px;
+	font-size: 1em;
+	color: #333;
+}
+
+.contact-info a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+	text-decoration: underline;
+}
+
+/* Footer styles */
+Footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+	font-size: 0.9em;
 }
